@@ -1,6 +1,9 @@
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   loop: true,
+  keyboard: {
+  enabled: true,
+},
 
   // Navigation arrows
   navigation: {
