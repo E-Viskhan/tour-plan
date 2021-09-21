@@ -558,6 +558,7 @@ template {
 .stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  line-height: 0;
 }
 
 .offer {
