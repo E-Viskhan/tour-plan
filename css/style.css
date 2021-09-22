@@ -761,4 +761,26 @@ template {
     width: 100%;
   }
 }
+
+@media (max-width: 480px) {
+  .swiper {
+    height: 230px;
+  }
+}
+
+@media (max-width: 320px) {
+  .swiper {
+    height: 180px;
+  }
+  .slider-button {
+    width: 12px;
+    height: 12px;
+  }
+  .slider-button--next {
+    right: 10px;
+  }
+  .slider-button--prev {
+    left: 10px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
