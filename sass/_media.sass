@@ -1,6 +1,8 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
+  .slider
+    width: 590px
 
 @media (max-width: 992px)
   .container
@@ -23,6 +25,18 @@
   .slider
     width: 100%
 
+  .hotel
+    &-grid
+      flex-direction: column
+    &__slider
+      margin-bottom: 30px
+    &-right
+      flex-direction: row
+      justify-content: space-between
+  .booking
+    width: 340px
+  .map
+    width: 340px
 @media (max-width: 768px)
   .container
     width: 91%
@@ -62,15 +76,27 @@
         margin-left: 0
     &-wrapper
       justify-content: space-between
+    &-right
+      flex-direction: column
+      min-height: 450px
+  .booking
+    width: 100%
+  .map
+    width: 100%
+
 @media (max-width: 576px)
   .logo
     width: 99px
   .swiper
     height: 300px
-    &-slide__img
-      height: 100%
+    &-slide
+      &__image
+        height: 100%
   .slider
     width: 100%
+  .hotel
+    &__slider
+      margin-bottom: 20px
 @media (max-width: 480px)
   .swiper
     height: 230px
