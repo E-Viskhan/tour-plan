@@ -680,7 +680,7 @@ template {
     width: 340px;
   }
   .slider {
-    width: 700px;
+    width: 100%;
   }
 }
 
@@ -750,6 +750,15 @@ template {
 @media (max-width: 576px) {
   .logo {
     width: 99px;
+  }
+  .swiper {
+    height: 300px;
+  }
+  .swiper-slide__img {
+    height: 100%;
+  }
+  .slider {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
