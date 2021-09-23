@@ -528,7 +528,7 @@ template {
 
 .hotel-info__offer {
   margin-left: 14px;
-  margin-top: 4px;
+  margin-top: 9px;
 }
 
 .hotel-description {
@@ -584,7 +584,9 @@ template {
 }
 
 .offer {
-  padding: 4px 9px;
+  min-height: 20px;
+  min-width: 70px;
+  padding: 3px 9px;
   background-color: #EC1F46;
   border-radius: 3px;
   font-weight: 600;
