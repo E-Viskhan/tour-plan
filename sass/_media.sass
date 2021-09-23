@@ -6,6 +6,7 @@
 
 @media (max-width: 992px)
   .container
+    width: 92%
     max-width: 700px
   .logo
     width: 132px
@@ -15,7 +16,9 @@
     &__search
       margin-left: auto
     &-menu
-      padding: 22px 0
+      max-width: 673px
+      padding: 21px 0
+      margin: 0 auto
       &__link
         font-size: 12px
         line-height: 15px
@@ -38,27 +41,35 @@
   .map
     width: 340px
 @media (max-width: 768px)
-  .container
-    width: 91%
+  .navbar
+    &__search
+      margin: 0
+      margin-right: 26px
+    &-menu
+      &__link
+        font-size: 1.6vw
+@media (max-width: 576px)
+  .logo
+    width: 99px
   .navbar
     &__search, &-menu, &__user
       display: none
-    .menu
-      &-button
+  .menu
+    &-button
+      width: 16px
+      height: 11px
+      display: flex
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      border: 0
+      padding: 0
+      background-color: $light
+      cursor: pointer
+      &__line
         width: 16px
-        height: 11px
-        display: flex
-        align-items: center
-        justify-content: space-between
-        flex-direction: column
-        border: 0
-        padding: 0
-        background-color: $light
-        cursor: pointer
-        &__line
-          width: 16px
-          height: 1px
-          background-color: $text-color
+        height: 1px
+        background-color: $text-color
   .stars
     flex-basis: auto
   .hotel
@@ -74,19 +85,15 @@
       &__offer
         order: -1
         margin-left: 0
-    &-wrapper
-      justify-content: space-between
-    &-right
-      flex-direction: column
-      min-height: 450px
+      &-wrapper
+        justify-content: space-between
+      &-right
+        flex-direction: column
+        min-height: 450px
   .booking
     width: 100%
   .map
     width: 100%
-
-@media (max-width: 576px)
-  .logo
-    width: 99px
   .swiper
     height: 300px
     &-slide

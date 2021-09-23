@@ -483,7 +483,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 18px 0;
+  padding: 19px 0;
   margin: 0;
   list-style: none;
 }
@@ -504,7 +504,7 @@ template {
 }
 
 .hotel {
-  padding-top: 23px;
+  padding-top: 22px;
   padding-bottom: 70px;
 }
 
@@ -675,7 +675,7 @@ template {
 .booking {
   width: 350px;
   min-height: 210px;
-  padding: 27px 28px;
+  padding: 29px 22px 26px 23px;
   background-color: #0A223D;
   color: #ffffff;
   border-radius: 8px;
@@ -713,7 +713,7 @@ template {
   font-weight: normal;
   font-weight: 800;
   font-size: 24px;
-  line-height: 33px;
+  line-height: 31px;
 }
 
 .booking__per-room {
@@ -819,6 +819,7 @@ template {
 
 @media (max-width: 992px) {
   .container {
+    width: 92%;
     max-width: 700px;
   }
   .logo {
@@ -831,7 +832,9 @@ template {
     margin-left: auto;
   }
   .navbar-menu {
-    padding: 22px 0;
+    max-width: 673px;
+    padding: 21px 0;
+    margin: 0 auto;
   }
   .navbar-menu__link {
     font-size: 12px;
@@ -870,13 +873,23 @@ template {
 }
 
 @media (max-width: 768px) {
-  .container {
-    width: 91%;
+  .navbar__search {
+    margin: 0;
+    margin-right: 26px;
+  }
+  .navbar-menu__link {
+    font-size: 1.6vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    width: 99px;
   }
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
   }
-  .navbar .menu-button {
+  .menu-button {
     width: 16px;
     height: 11px;
     display: -webkit-box;
@@ -897,7 +910,7 @@ template {
     background-color: #ffffff;
     cursor: pointer;
   }
-  .navbar .menu-button__line {
+  .menu-button__line {
     width: 16px;
     height: 1px;
     background-color: #333333;
@@ -925,12 +938,12 @@ template {
             order: -1;
     margin-left: 0;
   }
-  .hotel-wrapper {
+  .hotel-info-wrapper {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .hotel-right {
+  .hotel-info-right {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -942,12 +955,6 @@ template {
   }
   .map {
     width: 100%;
-  }
-}
-
-@media (max-width: 576px) {
-  .logo {
-    width: 99px;
   }
   .swiper {
     height: 300px;
