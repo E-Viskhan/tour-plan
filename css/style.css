@@ -810,11 +810,6 @@ template {
   overflow: hidden;
 }
 
-.map-frame {
-  width: 100%;
-  height: 213px;
-}
-
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
