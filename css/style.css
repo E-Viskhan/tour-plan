@@ -675,7 +675,7 @@ template {
 .booking {
   width: 350px;
   min-height: 210px;
-  padding: 29px 22px 26px 23px;
+  padding: 29px 29px 26px 26px;
   background-color: #0A223D;
   color: #ffffff;
   border-radius: 8px;
@@ -866,6 +866,7 @@ template {
   }
   .booking {
     width: 340px;
+    padding: 29px 22px 26px 23px;
   }
   .map {
     width: 340px;
