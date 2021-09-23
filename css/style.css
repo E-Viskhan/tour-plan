@@ -841,7 +841,7 @@ template {
     line-height: 15px;
   }
   .search__input {
-    width: 340px;
+    max-width: 340px;
   }
   .slider {
     width: 100%;
@@ -865,11 +865,11 @@ template {
             justify-content: space-between;
   }
   .booking {
-    width: 340px;
+    max-width: 340px;
     padding: 29px 22px 26px 23px;
   }
   .map {
-    width: 340px;
+    max-width: 340px;
   }
 }
 
@@ -877,9 +877,16 @@ template {
   .navbar__search {
     margin: 0;
     margin-right: 26px;
+    max-width: 48%;
   }
   .navbar-menu__link {
     font-size: 1.6vw;
+  }
+  .booking {
+    width: 49%;
+  }
+  .map {
+    width: 49%;
   }
 }
 
@@ -889,6 +896,10 @@ template {
   }
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
+  }
+  .navbar-top {
+    padding: 25px 0;
+    min-height: 70px;
   }
   .menu-button {
     width: 16px;
@@ -916,13 +927,32 @@ template {
     height: 1px;
     background-color: #333333;
   }
+  .breadcrumb-list {
+    min-height: 50px;
+    padding: 18px 0;
+  }
   .stars {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
   }
+  .hotel {
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
+  .hotel-name {
+    font-size: 4.5vw;
+  }
+  .hotel-wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .hotel-name {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  .hotel-info {
+    padding-bottom: 38px;
   }
   .hotel-info__text {
     width: 100%;
@@ -944,18 +974,24 @@ template {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .hotel-info-right {
+  .hotel-right {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    min-height: 450px;
+  }
+  .hotel__slider {
+    margin-bottom: 20px;
   }
   .booking {
     width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
   }
   .map {
     width: 100%;
+    max-width: 100%;
+    height: 172px;
   }
   .swiper {
     height: 300px;
@@ -978,6 +1014,15 @@ template {
 }
 
 @media (max-width: 320px) {
+  .container {
+    max-width: 280px;
+  }
+  .hotel-name {
+    font-size: 24px;
+  }
+  .booking {
+    padding: 29px 21px 26px 22px;
+  }
   .swiper {
     height: 180px;
   }
