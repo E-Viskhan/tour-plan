@@ -86,12 +86,14 @@
     padding: 18px 0
   .stars
     flex-basis: auto
+    margin-right: 16px
   .hotel
     padding-top: 0
     padding-bottom: 40px
     &-name
       font-size: 4.5vw
     &-wrapper
+      padding-top: 5px
       justify-content: space-between
     &-name
       flex-basis: 100%
@@ -105,7 +107,8 @@
         display: none
       &__offer
         order: -1
-        margin-left: 0
+        margin: 0
+        margin-left: 1px
       &-wrapper
         justify-content: space-between
     &-right
@@ -116,6 +119,8 @@
     width: 100%
     max-width: 100%
     margin-bottom: 20px
+    &__num
+      margin-left: 12px
   .map
     width: 100%
     max-width: 100%
@@ -132,6 +137,12 @@
 @media (max-width: 320px)
   .container
     max-width: 280px
+  .navbar
+    &-top
+      align-items: flex-start
+      padding: 22px 0
+      &__menu-button
+        margin-top: 7px
   .hotel
     &-name
       font-size: 24px

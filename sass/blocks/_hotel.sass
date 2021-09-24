@@ -74,8 +74,10 @@
         background-image: url(../img/arrow-prev.svg)
 
 .stars
+  display: flex
   flex-basis: 100%
-  line-height: 0
+.icon-star:not(:last-child)
+  margin-right: 2px
 .offer
   min-height: 20px
   min-width: 70px
