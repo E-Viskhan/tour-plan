@@ -121,18 +121,14 @@
     max-width: 100%
     height: 172px
   .hotel-slider
-    width: 100%
+    height: 300px
   .hotel
     &__slider
       margin-bottom: 20px
-  .swiper
-    height: 300px
-    &-slide
-      &__image
-        height: 100%
 @media (max-width: 480px)
-  .swiper
-    height: 230px
+  .hotel
+    &-slider
+      height: 230px
 @media (max-width: 320px)
   .container
     max-width: 280px
@@ -141,10 +137,9 @@
       font-size: 24px
   .booking
     padding: 29px 21px 26px 22px
-  .swiper
-    height: 180px
   .hotel-slider
-    &-button
+    height: 180px
+    &__button
       width: 12px
       height: 12px
       &--next
