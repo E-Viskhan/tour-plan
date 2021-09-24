@@ -644,11 +644,11 @@ template {
      object-fit: cover;
 }
 
-.slider {
+.hotel-slider {
   width: 728px;
 }
 
-.slider-button {
+.hotel-slider-button {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -664,12 +664,12 @@ template {
   background-color: transparent;
 }
 
-.slider-button--next {
+.hotel-slider-button--next {
   right: 18px;
   background-image: url(../img/arrow-next.svg);
 }
 
-.slider-button--prev {
+.hotel-slider-button--prev {
   left: 18px;
   background-image: url(../img/arrow-prev.svg);
 }
@@ -814,7 +814,7 @@ template {
   .container {
     max-width: 960px;
   }
-  .slider {
+  .hotel-slider {
     width: 590px;
   }
 }
@@ -846,7 +846,7 @@ template {
   .search__input {
     max-width: 340px;
   }
-  .slider {
+  .hotel-slider {
     width: 100%;
   }
   .hotel-grid {
@@ -996,17 +996,17 @@ template {
     max-width: 100%;
     height: 172px;
   }
+  .hotel-slider {
+    width: 100%;
+  }
+  .hotel__slider {
+    margin-bottom: 20px;
+  }
   .swiper {
     height: 300px;
   }
   .swiper-slide__image {
     height: 100%;
-  }
-  .slider {
-    width: 100%;
-  }
-  .hotel__slider {
-    margin-bottom: 20px;
   }
 }
 
@@ -1029,14 +1029,14 @@ template {
   .swiper {
     height: 180px;
   }
-  .slider-button {
+  .hotel-slider-button {
     width: 12px;
     height: 12px;
   }
-  .slider-button--next {
+  .hotel-slider-button--next {
     right: 10px;
   }
-  .slider-button--prev {
+  .hotel-slider-button--prev {
     left: 10px;
   }
 }
