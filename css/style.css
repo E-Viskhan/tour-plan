@@ -528,7 +528,7 @@ template {
 
 .hotel-info__offer {
   margin-left: 14px;
-  margin-top: 9px;
+  margin-top: 7px;
 }
 
 .hotel-description {
@@ -831,7 +831,8 @@ template {
     padding: 30px 0;
   }
   .navbar__search {
-    margin-left: auto;
+    margin: 0;
+    margin-right: 24px;
   }
   .navbar-menu {
     max-width: 673px;
@@ -878,7 +879,7 @@ template {
 @media (max-width: 768px) {
   .navbar__search {
     margin: 0;
-    margin-right: 26px;
+    margin-right: 22px;
     max-width: 48%;
   }
   .navbar-menu__link {
