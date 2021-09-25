@@ -449,6 +449,7 @@ template {
   height: 100%;
   background-color: #EC1F46;
   border: none;
+  cursor: pointer;
 }
 
 .user {
