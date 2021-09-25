@@ -1,17 +1,3 @@
-const hotelSwiper = new Swiper('.hotel-slider', {
-  // Optional parameters
-  loop: true,
-  keyboard: {
-  enabled: true,
-},
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.hotel-slider__button--next',
-    prevEl: '.hotel-slider__button--prev',
-  },
-});
-
 // Функция ymaps.ready() будет вызвана, когда
 // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
 ymaps.ready(init);
@@ -28,3 +14,19 @@ function init(){
         zoom: 17
     });
 }
+
+var hotelSwiper = new Swiper('.hotel-slider', {
+  // Optional parameters
+  loop: true,
+  keyboard: {
+  enabled: true,
+},
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.hotel-slider__button--next',
+    prevEl: '.hotel-slider__button--prev',
+  },
+});
+
+hotelSwiper.allowTouchMove = true
