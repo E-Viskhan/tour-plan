@@ -7,6 +7,7 @@
     line-height: 45px
     text-align: center
     text-transform: uppercase
+    margin-top: 0
     margin-bottom: 70px
   &-slider
     position: relative
@@ -40,11 +41,12 @@
         background-repeat: no-repeat
     &__button
       @include arrows-for-slider
+      top: 41%
       &--prev
-        left: 0
+        left: 16px
         background-image: url("../img/arrow-prev-secondary.svg")
       &--next
-        right: 0
+        right: 16px
         background-image: url("../img/arrow-next-secondary.svg")
     &__profile
       display: flex
@@ -55,27 +57,30 @@
     &__avatar
       width: 90px
       height: 90px
+      margin-bottom: 9px
       object-fit: cover
       border-radius: 50%
-      margin-bottom: 9px
     &__username
+      margin-bottom: 10px
       font-style: normal
       font-weight: bold
       font-size: 12px
       line-height: 15px
       color: $primary
-      margin-bottom: 10px
+      margin-top: 0
     &__date
+      margin-bottom: 4px
       font-style: normal
       font-weight: normal
       font-size: 10px
       line-height: 13px
-      margin-bottom: 4px
     &__rating
       align-items: center
     &__text
+      margin: 0
       font-style: normal
       font-weight: normal
       font-size: 12px
       line-height: 160%
       text-align: justify
+      font-weight: 400
