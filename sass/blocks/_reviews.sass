@@ -1,0 +1,80 @@
+.reviews
+  padding: 40px 0 70px 0
+  &__title
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+    margin-bottom: 70px
+  &-slider
+    &__item
+      width: 730px
+      margin: 45px auto 0
+      position: relative
+      padding: 0 95px 30px 99px
+      display: flex
+      flex-direction: column
+      align-items: center
+      background-color: #fff
+      border-radius: 8px
+      &::before
+        content: ''
+        width: 70px
+        height: 47px
+        top: 13px
+        left: 64px
+        position: absolute
+        background-image: url("../img/qoute-left.svg")
+        background-repeat: no-repeat
+      &::after
+        content: ''
+        width: 70px
+        height: 47px
+        top: 118px
+        right: 60px
+        position: absolute
+        background-image: url("../img/qoute-right.svg")
+        background-repeat: no-repeat
+    &__button
+      @include arrows-for-slider
+      &--prev
+        left: 0
+        background-image: url("../img/arrow-prev-secondary.svg")
+      &--next
+        right: 0
+        background-image: url("../img/arrow-next-secondary.svg")
+    &__profile
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-top: -45px
+      margin-bottom: 32px
+    &__avatar
+      width: 90px
+      height: 90px
+      object-fit: cover
+      border-radius: 50%
+      margin-bottom: 9px
+    &__username
+      font-style: normal
+      font-weight: bold
+      font-size: 12px
+      line-height: 15px
+      color: $primary
+      margin-bottom: 10px
+    &__date
+      font-style: normal
+      font-weight: normal
+      font-size: 10px
+      line-height: 13px
+      margin-bottom: 4px
+    &__rating
+      align-items: center
+    &__text
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 160%
+      text-align: justify
