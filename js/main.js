@@ -42,3 +42,6 @@ var reviewsSlider = new Swiper('.reviews-slider', {
     prevEl: '.reviews-slider__button--prev',
   },
 });
+
+
+$('.newsletter-parallax').parallax({imageSrc: '../img/newsletter-bg.jpg', speed: 0.7});
