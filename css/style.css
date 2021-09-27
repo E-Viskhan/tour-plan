@@ -925,8 +925,12 @@ template {
   margin-bottom: 70px;
 }
 
+.reviews-slider {
+  position: relative;
+}
+
 .reviews-slider__item {
-  width: 730px;
+  max-width: 731px;
   margin: 45px auto 0;
   position: relative;
   padding: 0 95px 30px 99px;
@@ -1117,6 +1121,9 @@ template {
   .newsletter {
     padding: 92px 0 93px 0;
   }
+  .reviews-slider__item {
+    max-width: 579px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1293,6 +1300,28 @@ template {
   }
   .subscribe__input {
     padding-left: 20px;
+  }
+  .reviews-slider__item {
+    max-width: 100%;
+    padding: 0 29px 36px 33px;
+  }
+  .reviews-slider__item::before, .reviews-slider__item::after {
+    display: none;
+  }
+  .reviews-slider__button {
+    top: 32px;
+  }
+  .reviews-slider__button--prev {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin-left: -65px;
+  }
+  .reviews-slider__button--next {
+    right: 50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+    margin-right: -65px;
   }
 }
 
