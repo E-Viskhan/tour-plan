@@ -1127,8 +1127,27 @@ template {
   .newsletter {
     padding: 92px 0 93px 0;
   }
+  .reviews__title {
+    margin-bottom: 50px;
+    font-size: 30px;
+    line-height: 38px;
+  }
   .reviews-slider__item {
     max-width: 579px;
+    padding: 0 60px 30px 64px;
+  }
+  .reviews-slider__text {
+    text-align: left;
+    max-width: 455px;
+  }
+  .reviews-slider__button {
+    top: 43%;
+  }
+  .reviews-slider__button--prev {
+    left: 0;
+  }
+  .reviews-slider__button--next {
+    right: 0;
   }
 }
 
@@ -1307,6 +1326,12 @@ template {
   .subscribe__input {
     padding-left: 20px;
   }
+  .reviews__title {
+    max-width: 245px;
+    margin: 0 auto 44px;
+    font-size: 18px;
+    line-height: 23px;
+  }
   .reviews-slider__item {
     max-width: 100%;
     padding: 0 29px 36px 33px;
@@ -1321,13 +1346,16 @@ template {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    margin-left: -65px;
+    margin-left: -92px;
   }
   .reviews-slider__button--next {
     right: 50%;
     -webkit-transform: translateX(50%);
             transform: translateX(50%);
-    margin-right: -65px;
+    margin-right: -88px;
+  }
+  .reviews-slider__profile {
+    margin-right: 8px;
   }
 }
 
