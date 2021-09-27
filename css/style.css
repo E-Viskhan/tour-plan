@@ -823,10 +823,8 @@ template {
   min-height: 260px;
   position: relative;
   padding: 98px 0 87px 0;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   background: transparent;
+  overflow: hidden;
 }
 
 .newsletter:before {
@@ -1138,7 +1136,6 @@ template {
     padding: 0 60px 30px 64px;
   }
   .reviews-slider__text {
-    text-align: left;
     max-width: 455px;
   }
   .reviews-slider__button {
@@ -1357,6 +1354,9 @@ template {
   }
   .reviews-slider__profile {
     margin-right: 8px;
+  }
+  .reviews-slider__text {
+    text-align: left;
   }
 }
 
