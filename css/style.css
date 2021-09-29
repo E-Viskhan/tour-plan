@@ -724,7 +724,7 @@ template {
   font-weight: normal;
   font-weight: 800;
   font-size: 24px;
-  line-height: 31px;
+  line-height: 28px;
 }
 
 .booking__per-room {
@@ -985,7 +985,7 @@ template {
   background-position: center;
   background-size: 10px;
   background-color: transparent;
-  top: 41%;
+  top: 46%;
 }
 
 .reviews-slider__button--prev {
@@ -1051,7 +1051,7 @@ template {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
-  line-height: 160%;
+  line-height: 156%;
   text-align: justify;
   font-weight: 400;
 }
@@ -1186,6 +1186,7 @@ template {
   }
   .search__input {
     max-width: 340px;
+    padding-left: 19px;
   }
   .hotel-slider {
     width: 100%;
@@ -1221,6 +1222,9 @@ template {
   .newsletter {
     padding: 92px 0 93px 0;
   }
+  .reviews {
+    padding-bottom: 60px;
+  }
   .reviews__title {
     margin-bottom: 50px;
     font-size: 30px;
@@ -1234,7 +1238,7 @@ template {
     max-width: 455px;
   }
   .reviews-slider__button {
-    top: 43%;
+    top: 50%;
   }
   .reviews-slider__button--prev {
     left: 0;
@@ -1253,8 +1257,12 @@ template {
     margin-bottom: 20px;
   }
   .card {
-    width: 339px;
+    width: 49%;
+    max-width: 339px;
     height: 255px;
+  }
+  .card__title {
+    width: 200px;
   }
 }
 
@@ -1281,10 +1289,6 @@ template {
   }
   .subscribe {
     width: 50%;
-  }
-  .card {
-    width: 48%;
-    height: 255px;
   }
 }
 
@@ -1437,6 +1441,9 @@ template {
   .subscribe__input {
     padding-left: 20px;
   }
+  .reviews {
+    padding-bottom: 50px;
+  }
   .reviews__title {
     max-width: 245px;
     margin: 0 auto 44px;
@@ -1468,11 +1475,34 @@ template {
   .reviews-slider__profile {
     margin-right: 8px;
   }
+  .reviews-slider__avatar {
+    margin-bottom: 7px;
+  }
   .reviews-slider__text {
     text-align: left;
+    line-height: 159%;
   }
   .card {
     width: 100%;
+  }
+  .activities {
+    padding: 39px 0 60px 0;
+  }
+  .activities__title {
+    margin-bottom: 36px;
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .activities__card:nth-child(1) {
+    -webkit-box-ordinal-group: -1;
+        -ms-flex-order: -2;
+            order: -2;
+  }
+  .activities__card:nth-child(3) {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-bottom: 28px;
   }
 }
 

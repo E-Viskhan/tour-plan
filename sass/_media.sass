@@ -29,6 +29,7 @@
   .search
     &__input
       max-width: 340px
+      padding-left: 19px
   .hotel
     &-slider
       width: 100%
@@ -50,6 +51,7 @@
   .newsletter
     padding: 92px 0 93px 0
   .reviews
+    padding-bottom: 60px
     &__title
       margin-bottom: 50px
       font-size: 30px
@@ -61,7 +63,7 @@
       &__text
         max-width: 455px
       &__button
-        top: 43%
+        top: 50%
         &--prev
           left: 0
         &--next
@@ -73,8 +75,11 @@
     &__card
       margin-bottom: 20px
   .card
-    width: 339px
+    width: 49%
+    max-width: 339px
     height: 255px
+    &__title
+      width: 200px
 @media (max-width: 768px)
   .navbar
     &__search
@@ -96,9 +101,6 @@
         font-size: 4.7vw
   .subscribe
     width: 50%
-  .card
-    width: 48%
-    height: 255px
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -196,6 +198,7 @@
     &__input
       padding-left: 20px
   .reviews
+    padding-bottom: 50px
     &__title
       max-width: 245px
       margin: 0 auto 44px
@@ -219,10 +222,26 @@
           margin-right: -88px
       &__profile
         margin-right: 8px
+      &__avatar
+        margin-bottom: 7px
       &__text
         text-align: left
+        line-height: 159%
   .card
     width: 100%
+
+  .activities
+    padding: 39px 0 60px 0
+    &__title
+      margin-bottom: 36px
+      font-size: 18px
+      line-height: 23px
+    &__card:nth-child(1)
+      order: -2
+    &__card:nth-child(3)
+      order: -1
+      margin-bottom: 28px
+
 @media (max-width: 480px)
   .hotel
     &-slider
