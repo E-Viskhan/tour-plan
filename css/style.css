@@ -912,7 +912,7 @@ template {
 }
 
 .reviews {
-  padding: 40px 0 70px 0;
+  padding: 41px 0 70px 0;
 }
 
 .reviews__title {
@@ -1051,7 +1051,8 @@ template {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
-  line-height: 156%;
+  line-height: 160%;
+  word-spacing: 1px;
   text-align: justify;
   font-weight: 400;
 }
@@ -1475,12 +1476,10 @@ template {
   .reviews-slider__profile {
     margin-right: 8px;
   }
-  .reviews-slider__avatar {
-    margin-bottom: 7px;
-  }
   .reviews-slider__text {
     text-align: left;
-    line-height: 159%;
+    line-height: 160%;
+    word-spacing: 0;
   }
   .card {
     width: 100%;
