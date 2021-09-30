@@ -1483,6 +1483,7 @@ template {
   }
   .card {
     width: 100%;
+    max-width: 100%;
   }
   .activities {
     padding: 39px 0 60px 0;
