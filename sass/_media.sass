@@ -21,7 +21,7 @@
       margin-right: 24px
     &-menu
       max-width: 673px
-      padding: 21px 0
+      padding: 22px 0 23px 0
       margin: 0 auto
       &__link
         font-size: 12px
@@ -30,12 +30,15 @@
     &__input
       max-width: 340px
       padding-left: 19px
+  .breadcrumb
+    &-list
+      padding: 19px 0 18px 0
   .hotel
     &-slider
       width: 100%
 
   .hotel
-    padding-bottom: 58px
+    padding-bottom: 60px
     &-grid
       flex-direction: column
     &__slider
@@ -48,9 +51,11 @@
     padding: 29px 22px 26px 23px
   .map
     max-width: 340px
+    height: 210px
   .newsletter
     padding: 92px 0 93px 0
   .reviews
+    min-height: 532px
     padding-bottom: 60px
     &__title
       margin-bottom: 50px
@@ -74,6 +79,8 @@
       flex-wrap: wrap
     &__card
       margin-bottom: 20px
+      &:last-child, &:nth-last-child(2)
+        margin-bottom: 0
   .card
     width: 49%
     max-width: 339px
@@ -166,8 +173,14 @@
   .booking
     width: 100%
     max-width: 100%
+    padding: 29px 21px 26px 22px
+    &__start
+      line-height: 12px
     &__num
-      margin-left: 12px
+      margin-left: 8px
+      margin-right: 4px
+    &__call-center
+      margin-bottom: 18px
   .map
     width: 100%
     max-width: 100%
@@ -201,7 +214,7 @@
     padding-bottom: 50px
     &__title
       max-width: 245px
-      margin: 0 auto 44px
+      margin: 0 auto 42px
       font-size: 18px
       line-height: 23px
     &-slider
@@ -222,18 +235,16 @@
           margin-right: -88px
       &__profile
         margin-right: 8px
-      // &__avatar
-      //   margin-bottom: 7px
       &__text
         text-align: left
-        line-height: 160%
+        line-height: 19px
         word-spacing: 0
   .card
     width: 100%
     max-width: 100%
 
   .activities
-    padding: 39px 0 60px 0
+    padding: 40px 0 60px 0
     &__title
       margin-bottom: 36px
       font-size: 18px
@@ -264,8 +275,6 @@
   .hotel
     &-name
       font-size: 24px
-  .booking
-    padding: 29px 21px 26px 22px
   .hotel
     &-slider
       height: 180px

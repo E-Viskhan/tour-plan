@@ -408,6 +408,9 @@ template {
 }
 
 .navbar-menu__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: inherit;
   text-decoration: none;
   text-transform: uppercase;
@@ -484,7 +487,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 19px 0;
+  padding: 18px 0 19px 0;
   margin: 0;
   list-style: none;
 }
@@ -505,7 +508,7 @@ template {
 }
 
 .hotel {
-  padding-top: 22px;
+  padding-top: 23px;
   padding-bottom: 70px;
 }
 
@@ -724,14 +727,14 @@ template {
   font-weight: normal;
   font-weight: 800;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 31px;
 }
 
 .booking__per-room {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 14px;
 }
 
 .booking__room {
@@ -912,7 +915,8 @@ template {
 }
 
 .reviews {
-  padding: 41px 0 70px 0;
+  min-height: 550px;
+  padding: 40px 0 70px 0;
 }
 
 .reviews__title {
@@ -1051,7 +1055,7 @@ template {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
-  line-height: 160%;
+  line-height: 158%;
   word-spacing: 1px;
   text-align: justify;
   font-weight: 400;
@@ -1069,6 +1073,7 @@ template {
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
+  color: #000000;
 }
 
 .activities-wrapper {
@@ -1178,7 +1183,7 @@ template {
   }
   .navbar-menu {
     max-width: 673px;
-    padding: 21px 0;
+    padding: 22px 0 23px 0;
     margin: 0 auto;
   }
   .navbar-menu__link {
@@ -1189,11 +1194,14 @@ template {
     max-width: 340px;
     padding-left: 19px;
   }
+  .breadcrumb-list {
+    padding: 19px 0 18px 0;
+  }
   .hotel-slider {
     width: 100%;
   }
   .hotel {
-    padding-bottom: 58px;
+    padding-bottom: 60px;
   }
   .hotel-grid {
     -webkit-box-orient: vertical;
@@ -1219,11 +1227,13 @@ template {
   }
   .map {
     max-width: 340px;
+    height: 210px;
   }
   .newsletter {
     padding: 92px 0 93px 0;
   }
   .reviews {
+    min-height: 532px;
     padding-bottom: 60px;
   }
   .reviews__title {
@@ -1256,6 +1266,9 @@ template {
   }
   .activities__card {
     margin-bottom: 20px;
+  }
+  .activities__card:last-child, .activities__card:nth-last-child(2) {
+    margin-bottom: 0;
   }
   .card {
     width: 49%;
@@ -1397,9 +1410,17 @@ template {
   .booking {
     width: 100%;
     max-width: 100%;
+    padding: 29px 21px 26px 22px;
+  }
+  .booking__start {
+    line-height: 12px;
   }
   .booking__num {
-    margin-left: 12px;
+    margin-left: 8px;
+    margin-right: 4px;
+  }
+  .booking__call-center {
+    margin-bottom: 18px;
   }
   .map {
     width: 100%;
@@ -1447,7 +1468,7 @@ template {
   }
   .reviews__title {
     max-width: 245px;
-    margin: 0 auto 44px;
+    margin: 0 auto 42px;
     font-size: 18px;
     line-height: 23px;
   }
@@ -1478,7 +1499,7 @@ template {
   }
   .reviews-slider__text {
     text-align: left;
-    line-height: 160%;
+    line-height: 19px;
     word-spacing: 0;
   }
   .card {
@@ -1486,7 +1507,7 @@ template {
     max-width: 100%;
   }
   .activities {
-    padding: 39px 0 60px 0;
+    padding: 40px 0 60px 0;
   }
   .activities__title {
     margin-bottom: 36px;
@@ -1531,9 +1552,6 @@ template {
   }
   .hotel-name {
     font-size: 24px;
-  }
-  .booking {
-    padding: 29px 21px 26px 22px;
   }
   .hotel-slider {
     height: 180px;
