@@ -7,6 +7,11 @@
   .card
     width: 230px
     height: 230px
+  .packages
+    &__image-wrapper
+      width: 310px
+  .main-package__info
+    padding: 30px 25px 20px 35px
 @media (max-width: 992px)
   .container, .newsletter-wrapper
     width: 92%
@@ -87,6 +92,36 @@
     height: 255px
     &__title
       width: 200px
+  .packages
+    padding-top: 25px
+    padding-bottom: 50px
+    &__title
+      margin-bottom: 35px
+      font-size: 24px
+      line-height: 30px
+    &-wrapper
+      grid-template: minmax(430px, auto) minmax(430px, auto)/repeat(2, 1fr)
+      grid-gap: 20px
+    &__image-wrapper
+      width: 100%
+      height: 215px
+    &__info
+      padding-top: 10px
+      padding-bottom: 10px
+  .main-package
+    &__title
+      margin-bottom: 23px
+    &__image-wrapper
+      width: 350px
+      min-height: 430px
+    &__info
+      padding-top: 15px
+      padding-bottom: 15px
+    &__text
+      margin-bottom: 32px
+    &__more-info
+      margin-bottom: 20px
+
 @media (max-width: 768px)
   .navbar
     &__search
@@ -108,6 +143,13 @@
         font-size: 4.7vw
   .subscribe
     width: 50%
+  .packages-card
+    &__title
+      margin-bottom: 10px
+    &__book-now
+      min-width: 95px
+  .main-package
+    display: none
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -254,7 +296,9 @@
     &__card:nth-child(3)
       order: -1
       margin-bottom: 28px
-
+  .packages
+    &-wrapper
+      grid-template: repeat(2,minmax(432px, auto)) / 1fr
 @media (max-width: 480px)
   .hotel
     &-slider
