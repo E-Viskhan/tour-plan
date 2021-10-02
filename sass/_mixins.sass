@@ -11,3 +11,18 @@
   background-position: center
   background-size: 10px
   background-color: transparent
+
+@mixin styles-for-icon($image-address)
+  position: relative
+  padding-left: 28px
+  &::before
+    content: ''
+    position: absolute
+    top: 50%
+    left: 0
+    transform: translateY(-50%)
+    display: block
+    width: 14px
+    height: 14px
+    background-image: url($image-address)
+    background-repeat: no-repeat
