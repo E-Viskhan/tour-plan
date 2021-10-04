@@ -9,26 +9,32 @@
     grid-auto-rows: minmax(40px, min-content)
     align-items: start
   &__logo
-    width: 166px
+    width: 155px
+    height: 177px
+    margin-top: 30px
     grid-row: 1 / 4
-    align-self: stretch
   &__categories
     grid-row: 1 / 4
+    margin-left: 3px
+    margin-bottom: 18px
+  &__additional
+    margin-left: 6px
+  &__legal
+    justify-self: end
+    margin-right: 5px
   &__social
+
     &-links
       min-width: 83px
       display: flex
       align-items: center
       justify-content: space-between
     &-network
+      margin-left: 6px
+      margin-top: 1px
       display: flex
       align-items: center
       grid-row: 2 / 4
-      grid-column: span 2
-  &__contact
-    &-details
-      grid-column: span 2
-    &-form
       grid-column: span 2
   &__form
     display: flex
@@ -39,6 +45,22 @@
     padding: 0
     margin: 0
     list-style: none
+  &__contact
+    &-ul
+      margin-left: 5px
+    &-details
+      margin-top: 11px
+      margin-left: -3px
+      grid-column: span 2
+    &-form
+      margin-left: 6px
+      grid-column: span 2
+
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: $footer-text-color
   &__title
     font-style: normal
     font-weight: bold
@@ -46,10 +68,14 @@
     line-height: 23px
     margin: 0 0 16px 0
     text-transform: uppercase
+    &-categories
+      margin-bottom: 18px
+    &-contact
+      margin-bottom: 25px
+    &-message
+      margin-bottom: 33px
     &--inline
       margin: 0 43px 0 0
-    &--mb-3
-      margin-bottom: 30px
   &__item
     display: flex
     align-items: flex-start
@@ -64,26 +90,32 @@
     &-wrapper
       min-width: 38px
   &__text
+    margin-bottom: 19px
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 160%
     color: $footer-text-color
-    margin-bottom: 22px
   &__link
     text-decoration: none
     color: inherit
   &__input
-    width: 48%
+    margin-bottom: 15px
+    width: 47%
     height: 50px
     padding: 0 23px
     background-color: $light
     border-radius: 4px
     border: none
-    margin-bottom: 15px
   &__message
     flex-basis: 100%
+    height: 123px
     padding: 18px 23px
     margin-bottom: 22px
     background-color: $light
     border-radius: 4px
     border: none
+    resize: none
   &__button
     min-width: 160px
     min-height: 50px
@@ -102,3 +134,23 @@
     font-size: 12px
     line-height: 15px
     color: $footer-required-text
+  &__bottom
+    padding-top: 80px
+    margin-left: 131px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    grid-row: 5 / 6
+    grid-column: 2 / span 3
+    &-ul
+      display: flex
+    &-item
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      margin-right: 13px
+  &__payment
+    margin-top: -5px
+    width: 136px
+    height: 22px
