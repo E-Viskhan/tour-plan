@@ -5,18 +5,28 @@ require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
+
+// Для формы в футере сайта
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
-
-// Формирование самого письма
-$title = "New appeal Best Tour Plan";
-$body = "
-<h2>New appeal</h2>
-<b>Name:</b> $name<br>
-<b>Phone:</b> $phone<br><br>
-<b>Message:</b><br>$message
-";
+if (!empty($name)) {
+    $title = "New appeal Best Tour Plan";
+    $body = "
+    <h2>New appeal</h2>
+    <b>Name:</b> $name<br>
+    <b>Phone:</b> $phone<br><br>
+    <b>Message:</b><br>$message
+    ";
+} else {
+    $emailNewsletter = $_POST['emailNewsletter'];
+    $title = "New Subscriber for You";
+    $body = "
+    <h2>New Subscriber!</h2>
+    <strong>His Email: </strong> $emailNewsletter<br><br>
+    <strong>Congratulations!!!</strong>
+    ";
+}
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -24,7 +34,7 @@ try {
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
-    //$mail->SMTPDebug = 2;
+    $mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
@@ -52,4 +62,6 @@ else {$result = "error";}
 }
 
 // Отображение результата
+// echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+// Перенаправление после обработки формы
 header('Location: index.html');
