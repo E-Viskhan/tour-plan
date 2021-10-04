@@ -9,13 +9,13 @@ body {
   color: #333333;
 }
 
+img {
+  max-width: 100%;
+}
+
 .container {
   max-width: 1110px;
   margin: auto;
-}
-
-img {
-  max-width: 100%;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -827,7 +827,6 @@ template {
 }
 
 .packages {
-  display: none;
   padding: 40px 0 70px 0;
 }
 
@@ -1181,6 +1180,7 @@ template {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+  cursor: pointer;
 }
 
 .reviews {
@@ -1632,6 +1632,7 @@ template {
   background-color: #EC1F46;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .footer__info {
