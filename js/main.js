@@ -45,3 +45,8 @@ var reviewsSlider = new Swiper('.reviews-slider', {
 
 
 $('.newsletter-parallax').parallax({imageSrc: 'img/newsletter-bg.jpg', speed: 0.7});
+
+var navbarButton = document.querySelector('.menu-button');
+navbarButton.addEventListener('click', function(){
+  document.querySelector('.navbar-bottom').classList.toggle('navbar-bottom--visible');
+});

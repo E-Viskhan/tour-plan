@@ -14,6 +14,8 @@
     padding: 30px 25px 20px 35px
 
 @media (max-width: 991px)
+  body
+    padding-top: 100px
   .newsletter-wrapper
     width: 100%
     max-width: 100%
@@ -35,6 +37,13 @@
       &__link
         font-size: 12px
         line-height: 15px
+    &__mobile
+      &--fixed
+        position: fixed
+        top: 0
+        right: 0
+        left: 0
+        z-index: 2
   .search
     &__input
       max-width: 340px
@@ -177,14 +186,54 @@
       margin: 41px 0 0 0
       padding: 0
 @media (max-width: 768px)
+  body
+    padding-top: 70px
   .logo
     width: 99px
   .navbar
-    &__search, &-menu, &__user
-      display: none
+    &__search, &__user
+      &--mobile
+        &-hidden
+          display: none
+        &-visible
+          display: flex
+    &__user
+      flex-direction: column
+      justify-content: center
     &-top
       padding: 25px 0
       min-height: 70px
+    &-bottom
+      height: 100%
+      padding: 31px 0 68px 0
+      display: none
+      position: fixed
+      top: 70px
+      left: 0
+      right: 0
+      bottom: 0
+      &--visible
+        display: block
+    &-menu
+      padding: 0
+      margin: 0
+      flex-direction: column
+      &__item
+        margin-bottom: 20px
+        &--mobile
+          &-visible
+            display: block
+  .search
+    &__input
+      width: 245px
+  .user
+    &__avatar
+      &--mobile
+        margin-bottom: 10px
+    &__name
+      &--mobile
+        margin: 0
+        color: $light
   .menu
     &-button
       width: 16px
