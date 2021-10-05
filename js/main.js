@@ -48,11 +48,11 @@ $(document).ready(function() {
 
   $('.newsletter-parallax').parallax({imageSrc: 'img/newsletter-bg.jpg', speed: 0.7});
 
-  var navbarButton = document.querySelector('.menu-button');
-  navbarButton.addEventListener('click', function(){
-    document.querySelector('.navbar-bottom').classList.toggle('navbar-bottom--visible');
+  var navbarButton = $('.menu-button');
+  navbarButton.on('click', function(){
+    $('.navbar-bottom').toggleClass('navbar-bottom--visible');
   });
-
+  
   var modalOpenButton = $('[data-toggle=modal]');
   var modalCloseButton = $('.modal__close');
   var modalOverlay = $('.modal__overlay');

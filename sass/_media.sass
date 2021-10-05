@@ -185,6 +185,18 @@
       grid-column: span 12
       margin: 41px 0 0 0
       padding: 0
+  .modal
+    &__dialog
+      padding-right: 60px
+      padding-left: 60px
+      width: 60vw
+    &-wrapper
+      flex-wrap: wrap
+    &__button
+      flex-basis: 100%
+    &__info
+      margin-bottom: 15px
+      order: -1
 @media (max-width: 768px)
   body
     padding-top: 70px
@@ -378,6 +390,10 @@
       min-width: 95px
   .main-package
     display: none
+  .modal
+    &__dialog
+      padding-right: 40px
+      padding-left: 40px
 @media (max-width: 572px)
   .container
     width: 88%
@@ -464,8 +480,18 @@
         margin-bottom: 15px
       &-item
         margin-right: 7px
+  .modal
+    &__dialog
+      padding-right: 20px
+      padding-left: 20px
+      width: 80vw
 // @media (max-width: 480px)
 
 @media (max-width: 320px)
   .container
     max-width: 280px
+  .modal
+    &__dialog
+      padding-right: 20px
+      padding-left: 20px
+      width: 95vw
