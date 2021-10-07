@@ -14,7 +14,7 @@
       visibility: visible
       opacity: 1
   &__dialog
-    max-width: 478px
+    width: 478px
     padding: 33px 88px
     position: fixed
     top: 50%
@@ -47,10 +47,15 @@
   @include styles-for-form
   &__input
     width: 100%
+    &-wrapper
+      display: flex
+      flex-wrap: wrap
+      width: 100%
+      min-height: 65px
   &__message
-    margin-bottom: 15px
     width: 100%
   &-wrapper
+    margin-top: 15px
     display: flex
     align-items: center
     justify-content: space-between
