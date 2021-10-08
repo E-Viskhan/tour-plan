@@ -86,12 +86,12 @@ $(document).ready(function() {
   }
 
   // Закрытие модального окна при клике вне области модального окна
-  // $(document).mouseup(function (event){ // событие клика по веб-документу
-	// 	if (!modalDialog.is(event.target) // если клик был не по нашему блоку
-  //     && modalDialog.has(event.target).length === 0) { // и не по его дочерним элементам
-  //     closeModal(); // скрываем его
-  //   }
-  // });
+  $(document).mouseup(function (event){ // событие клика по веб-документу
+		if (!modalDialog.is(event.target) // если клик был не по нашему блоку
+      && modalDialog.has(event.target).length === 0) { // и не по его дочерним элементам
+      closeModal(); // скрываем его
+    }
+  });
   // Конец кода модального окна
 
   // Начало кода для валидации форм на сайте
@@ -112,5 +112,5 @@ $(document).ready(function() {
     }
   })
   })
-
+  AOS.init();
 });
