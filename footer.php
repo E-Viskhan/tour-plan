@@ -179,8 +179,11 @@
                 placeholder="Message"
                 name="message"
               ></textarea>
-              <button class="button footer__button" type="submit">Send</button>
-              <span class="footer__info">* Required Fields</span>
+              <div class="footer__form-bottom">
+                <button class="button footer__button" type="submit">Send</button>
+                <span class="footer__info">* Required Fields</span>
+              </div>
+              <!-- /.footer__form-bottom -->
             </form>
           </div>
           <!-- /.footer__contact-form -->
