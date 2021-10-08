@@ -64,4 +64,4 @@ else {$result = "error";}
 // Отображение результата
 // echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
 // Перенаправление после обработки формы
-header('Location: index.html');
+header('Location: thanks.php');
