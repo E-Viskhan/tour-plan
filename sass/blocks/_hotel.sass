@@ -171,8 +171,65 @@
     cursor: pointer
     &:hover
       background-color: darken($primary, 10%)
-.map
+.ymap-container
   width: 347px
   height: 213px
+  position: relative
+  overflow: hidden
+  cursor: pointer
+  background: url('../img/map.jpg') #9c6666 no-repeat
+  background-position: center center
+  background-size: cover
+
+.map
+  width: 100%
+  height: 100%
+  position: relative
+  z-index: 1
   border-radius: 10px
   overflow: hidden
+  background-color: transparent
+  cursor: pointer
+/* Индикатор загрузки, который показывается до загрузки карты */
+.loader
+  position: absolute
+  z-index: 15
+  top: -100%
+  left: 0
+  box-sizing: border-box
+  width: 100%
+  height: 100%
+  overflow: hidden
+  color: #000000
+  transition: opacity .7s ease
+  opacity: 0
+  background-color: rgba(0,0,0,.55)
+  &:after,
+  &:before
+    box-sizing: border-box
+  &.is-active
+    top: 0
+    opacity: 1
+  &-default:after
+    position: absolute
+    top: calc(50% - 24px)
+    left: calc(50% - 24px)
+    width: 48px
+    height: 48px
+    content: ''
+    animation: rotation 1s linear infinite
+    border: solid 8px #ffffff
+    border-left-color: transparent
+    border-radius: 50%
+
+@keyframes rotation
+  from
+    transform: rotate(0)
+  to
+    transform: rotate(359deg)
+
+@keyframes blink
+  from
+    opacity: .5
+  to
+    opacity: 1

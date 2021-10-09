@@ -13,9 +13,8 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=0e798ebc-5522-42c1-a008-3a000533b325&lang=ru_RU"></script>
+      />
+      <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="navbar navbar__mobile--fixed">

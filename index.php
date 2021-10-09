@@ -138,8 +138,12 @@
               </button>
             </div>
             <!-- /.booking -->
-            <div class="map" id="map"></div>
-            <!-- /.map -->
+            <div class="ymap-container">
+              <div class="loader loader-default"></div>
+              <div class="map map-yandex" id="map"></div>
+              <!-- /.map -->
+            </div>
+            <!-- /.ymap-container -->
           </div>
           <!-- /.hotel-right -->
         </div>
