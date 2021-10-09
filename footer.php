@@ -1,11 +1,13 @@
 <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <img
+          <a href="index.php" class=" footer__logo">
+            <img
             src="img/vertical-logo.svg"
             alt="Logo: Best Tour Plan"
-            class="logo footer__logo"
+            class="footer__logo-img"
           />
+          </a>
           <div class="footer__list footer__categories">
             <h3 class="footer__title footer__title-categories">
               ALL CATEGORIES
@@ -73,13 +75,13 @@
               Social Network
             </h3>
             <div class="footer__social-links">
-              <a href="https://facebook.com/elikhanov.viskhan" class="footer__link">
+              <a href="https://facebook.com/elikhanov.viskhan" class="footer__link" target="_blank">
                 <img src="img/fb.svg" alt="icon: facebook" />
               </a>
-              <a href="https://www.youtube.com/channel/UCxB31phUnFwnAJ1iole6BgQ" class="footer__link">
+              <a href="https://www.youtube.com/channel/UCxB31phUnFwnAJ1iole6BgQ" class="footer__link" target="_blank">
                 <img src="img/yt.svg" alt="icon: youtube" />
               </a>
-              <a href="https://www.instagram.com/e_viskhan/" class="footer__link">
+              <a href="https://www.instagram.com/e_viskhan/" class="footer__link" target="_blank">
                 <img src="img/inst.svg" alt="icon: instagram" />
               </a>
             </div>

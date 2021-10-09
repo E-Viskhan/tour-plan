@@ -159,8 +159,8 @@
             class="packages-card main-package"
             data-aos="flip-left"
             data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
-            data-aos-delay="500"
+            data-aos-duration="1500"
+            data-aos-delay="300"
           >
             <div class="packages__image-wrapper main-package__image-wrapper">
               <img
@@ -215,8 +215,8 @@
             class="packages-card"
             data-aos="flip-left"
             data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
-            data-aos-delay="500"
+            data-aos-duration="1500"
+            data-aos-delay="300"
           >
             <div class="packages__image-wrapper">
               <img
@@ -252,8 +252,8 @@
             class="packages-card"
             data-aos="flip-left"
             data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
-            data-aos-delay="500"
+            data-aos-duration="1500"
+            data-aos-delay="300"
           >
             <div class="packages__image-wrapper">
               <img
@@ -289,8 +289,8 @@
             class="packages-card"
             data-aos="flip-left"
             data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
-            data-aos-delay="500"
+            data-aos-duration="1500"
+            data-aos-delay="300"
           >
             <div class="packages__image-wrapper">
               <img
@@ -326,8 +326,8 @@
             class="packages-card"
             data-aos="flip-left"
             data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
-            data-aos-delay="500"
+            data-aos-duration="1500"
+            data-aos-delay="300"
           >
             <div class="packages__image-wrapper">
               <img

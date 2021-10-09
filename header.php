@@ -63,7 +63,7 @@
       <nav class="navbar-bottom">
         <div class="container">
           <ul class="navbar-menu">
-            <li class="navbar-menu__item navbar-menu__item--mobile-visible">
+            <li class="navbar-menu__item navbar-menu__item--mobile-visible navbar-menu__user">
               <a href="#" class="user navbar__user">
                 <img
                   src="img/user-avatar.jpg"
@@ -74,7 +74,7 @@
               </a>
               <!-- /.user -->
             </li>
-            <li class="navbar-menu__item navbar-menu__item--mobile-visible">
+            <li class="navbar-menu__item navbar-menu__item--mobile-visible navbar-menu__search">
               <form action="#" class="search">
                 <input
                   type="search"

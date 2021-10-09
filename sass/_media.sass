@@ -14,8 +14,6 @@
     padding: 30px 25px 20px 35px
 
 @media (max-width: 991px)
-  *:hover
-    border: none
   body
     padding-top: 160px
   .newsletter-wrapper
@@ -26,6 +24,10 @@
     max-width: 700px
   .logo
     width: 132px
+  .user
+    &__name
+      &:hover
+        border: none
   .navbar
     &-top
       padding: 30px 0
@@ -40,6 +42,8 @@
       &__link
         font-size: 12px
         line-height: 15px
+        &:hover
+          border-bottom: none
     &__mobile
       &--fixed
         position: fixed
@@ -51,9 +55,15 @@
     &__input
       max-width: 340px
       padding-left: 19px
+    &__button
+      &:hover
+        background-color: $primary
   .breadcrumb
     &-list
       padding: 19px 0 18px 0
+      &__link
+        &:hover
+          border-bottom: none
   .hotel
     &-slider
       width: 100%
@@ -70,6 +80,9 @@
   .booking
     max-width: 340px
     padding: 29px 22px 26px 23px
+    &__button
+      &:hover
+        background-color: $primary
   .ymap-container
     max-width: 340px
     height: 210px
@@ -77,6 +90,10 @@
     padding: 92px 0 93px 0
     &-wrapper
       width: 700px
+  .subscribe
+    &__button
+      &:hover
+        background-color: $primary
   .reviews
     min-height: 532px
     padding-bottom: 60px
@@ -90,6 +107,7 @@
         padding: 0 60px 30px 64px
       &__text
         max-width: 455px
+        max-height: 133px
       &__button
         top: 50%
         &--prev
@@ -110,6 +128,9 @@
     height: 255px
     &__title
       width: 200px
+    &__button
+      &:hover
+        background-color: $primary
   .packages
     padding-top: 25px
     padding-bottom: 50px
@@ -175,7 +196,7 @@
       grid-column: span 4
     &__contact
       &-details
-        margin: 20px 0 0 0
+        margin: 23px 0 0 0
         grid-column: span 10
         grid-row: 3
       &-form
@@ -184,10 +205,18 @@
         grid-column: span 11
         grid-row: 4
         max-width: 540px
+    &__text
+      margin-bottom: 21px
     &__bottom
       grid-column: span 12
       margin: 41px 0 0 0
       padding: 0
+    &__link
+      &:hover
+        border-bottom: none
+    &__button
+      &:hover
+        background-color: $primary
   .modal
     &__dialog
       padding-right: 60px
@@ -200,7 +229,7 @@
     &__info
       margin-bottom: 15px
       order: -1
-@media (max-width: 768px)
+@media (max-width: 768px), (orientation: landscape) and (max-height: 500px)
   body
     padding-top: 70px
   .logo
@@ -238,6 +267,10 @@
         &--mobile
           &-visible
             display: block
+      &__user
+        margin-bottom: 27px
+      &__search
+        margin-bottom: 39px
   .search
     &__input
       width: 245px
@@ -353,6 +386,8 @@
         padding: 0 29px 36px 33px
         &::before, &::after
           display: none
+      &__text
+        min-height: 266px
       &__button
         top: 32px
         &--prev
@@ -369,6 +404,8 @@
         text-align: left
         line-height: 19px
         word-spacing: 0
+        max-height: 263px
+
   .subscribe
     width: 100%
     &__input
@@ -409,6 +446,8 @@
   .hotel
     &-slider
       height: 180px
+      &__button
+        background-size: 30% 60%
   .packages
     &-wrapper
       grid-template: repeat(2,minmax(432px, auto)) / 1fr
@@ -424,8 +463,6 @@
         margin: 21px 0
       &-legal,&-additional, &-categories
         margin-top: 9px
-      &-contact
-        margin-bottom: 22px
       &-message
         margin-bottom: 17px
     &-wrapper
